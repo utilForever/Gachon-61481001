@@ -47,4 +47,8 @@ TBA
 
 ## Grading
 
-TBA
+- Attendance 15%
+- Planning Report 15%
+- Midterm Presentation 20%
+- Final Presentation 30%
+- Final Report 20%
