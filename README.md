@@ -52,9 +52,13 @@ This course involves conducting projects designed to understand virtual spaces a
 - Week 11: Simulation Experiments, Validation, and Final Integration
 - Week 12: Final Project Presentation and Report (No lecture)
 
-### Tools
+### LLM (Large Language Models) policy
 
-TBA
+- You are free to use LLMs while studying and working on assignments.
+- I will review the reports, proposals, presentations, and Q&A sessions you submit to assess your thought process behind your designs and your understanding of the code.
+- Do not assume that an LLM will always provide the correct answer.
+- You must take the lead in your thinking and use the LLM as a tool.
+- Do not offload all the thinking you should be doing onto the LLM.
 
 ## Grading
 
