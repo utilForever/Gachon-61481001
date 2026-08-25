@@ -12,9 +12,25 @@ This course involves conducting projects designed to understand virtual spaces a
 
 ### Outline
 
-TBA
-
-###
+- Part 1: Understanding and Planning
+  - Understanding Virtual Spaces / the Metaverse / Urban Simulation
+  - Representing a City in Terms of Space, Time, Objects, and Rules
+  - Selecting the City You Want to Build and Its Key Issues
+  - Submitting a Personal Project Plan Report
+- Part 2: Creating the City’s Basic Structure
+  - Implementing a Grid Map and Simulation Time
+  - Implementing Roads, Zoning, and Building Growth
+  - Modeling Travel Routes, Accessibility, and Traffic
+  - Visualizing Urban Indicators Such as Population and Congestion
+- Part 3: Expanding the Urban System
+  - Implementing Actors such as Citizens, Households, and Businesses
+  - Implementing Public Services, Infrastructure, and Environmental Systems
+  - Designing Scenarios for the Urban Economy, Finance, and Policy
+- Part 4: Conducting Experiments and Interpreting Results
+  - User Interface and Data Visualization
+  - Iterative Experimentation with Policy-Specific Scenarios
+  - Validating Results and Analyzing Model Limitations
+  - Final Presentation and Submission of the Final Report
 
 ### Prerequisites
 
