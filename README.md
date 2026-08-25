@@ -34,7 +34,8 @@ This course involves conducting projects designed to understand virtual spaces a
 
 ### Prerequisites
 
-TBA
+- Python Programming
+- Git & GitHub
 
 ### Schedule
 
