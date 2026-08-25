@@ -39,7 +39,18 @@ This course involves conducting projects designed to understand virtual spaces a
 
 ### Schedule
 
-TBA
+- Week 01: Introduction
+- Week 02: Virtual City Modeling
+- Week 03: Spatial Grids and Simulation Time
+- Week 04: Land Use and Urban Growth
+- Week 05: Road Networks, Accessibility, and Prototype Integration
+- Week 06: Midterm Project Presentation (No lecture)
+- Week 07: Agent-Based Urban Modeling
+- Week 08: Public Services, Infrastructure, and Environment
+- Week 09: Urban Economy, Finance, and Policy Scenarios
+- Week 10: User Interaction and Data Visualization
+- Week 11: Simulation Experiments, Validation, and Final Integration
+- Week 12: Final Project Presentation and Report (No lecture)
 
 ### Tools
 
