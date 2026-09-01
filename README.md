@@ -40,6 +40,7 @@ This course involves conducting projects designed to understand virtual spaces a
 ### Schedule
 
 - Week 01: Introduction
+  - [Lecture Note](./1%20-%20Lecture/260901%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%201.pdf)
 - Week 02: Virtual City Modeling
 - Week 03: Spatial Grids and Simulation Time
 - Week 04: Land Use and Urban Growth
