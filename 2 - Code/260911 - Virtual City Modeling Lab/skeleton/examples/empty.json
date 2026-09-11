@@ -1,0 +1,122 @@
+{
+  "day": 0,
+  "budget": 100,
+  "grid": [
+    [
+      {
+        "terrain": "land",
+        "road": false,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "building_id": null
+      },
+      {
+        "terrain": "water",
+        "road": false,
+        "building_id": null
+      }
+    ],
+    [
+      {
+        "terrain": "land",
+        "road": false,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "building_id": null
+      },
+      {
+        "terrain": "water",
+        "road": false,
+        "building_id": null
+      }
+    ],
+    [
+      {
+        "terrain": "land",
+        "road": false,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "building_id": null
+      }
+    ],
+    [
+      {
+        "terrain": "land",
+        "road": false,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "building_id": null
+      }
+    ]
+  ],
+  "buildings": {},
+  "rules": {
+    "growth_per_day": 2,
+    "tax_per_person_day": 3,
+    "maintenance_per_day": 10,
+    "park_radius": 1
+  },
+  "external_power": true
+}
