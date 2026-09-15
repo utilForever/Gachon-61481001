@@ -46,6 +46,7 @@ This course involves conducting projects designed to understand virtual spaces a
 - Week 03: Spatial Grids and Simulation Time
   - [Lecture Note](./1%20-%20Lecture/260911%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%203.pdf)
 - Week 04: Land Use and Urban Growth
+  - [Lecture Note](./1%20-%20Lecture/260915%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%204.pdf)
 - Week 05: Road Networks, Accessibility, and Prototype Integration
 - Week 06: Midterm Project Presentation (No lecture)
 - Week 07: Agent-Based Urban Modeling
