@@ -1,0 +1,143 @@
+{
+  "day": 0,
+  "budget": 100,
+  "demand": 3,
+  "departed": 0,
+  "grid": [
+    [
+      {
+        "terrain": "land",
+        "road": false,
+        "zone": null,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "zone": null,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "zone": null,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "zone": null,
+        "building_id": null
+      },
+      {
+        "terrain": "water",
+        "road": false,
+        "zone": null,
+        "building_id": null
+      }
+    ],
+    [
+      {
+        "terrain": "land",
+        "road": false,
+        "zone": null,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "zone": null,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "zone": null,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "zone": null,
+        "building_id": null
+      },
+      {
+        "terrain": "water",
+        "road": false,
+        "zone": null,
+        "building_id": null
+      }
+    ],
+    [
+      {
+        "terrain": "land",
+        "road": false,
+        "zone": null,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "zone": null,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "zone": null,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "zone": null,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "zone": null,
+        "building_id": null
+      }
+    ],
+    [
+      {
+        "terrain": "land",
+        "road": false,
+        "zone": null,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "zone": null,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "zone": null,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "zone": null,
+        "building_id": null
+      },
+      {
+        "terrain": "land",
+        "road": false,
+        "zone": null,
+        "building_id": null
+      }
+    ]
+  ],
+  "buildings": {},
+  "rules": {
+    "growth_per_day": 2,
+    "tax_per_person_day": 3,
+    "maintenance_per_day": 10
+  },
+  "external_power": true
+}
