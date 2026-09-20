@@ -42,19 +42,19 @@ This course involves conducting projects designed to understand virtual spaces a
 - Week 01: Introduction
   - [Lecture Note](./1%20-%20Lecture/260901%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%201.pdf)
 - Week 02: Virtual City Modeling
-  - [Lecture Note](./1%20-%20Lecture/260908%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%202.pdf)
-- Week 03: Spatial Grids and Simulation Time
-  - [Lecture Note](./1%20-%20Lecture/260911%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%203.pdf)
-- Week 04: Land Use and Urban Growth
-  - [Lecture Note](./1%20-%20Lecture/260915%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%204.pdf)
-- Week 05: Road Networks, Accessibility, and Prototype Integration
-  - [Lecture Note](./1%20-%20Lecture/260918%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%205.pdf)
+  - [Lecture Note - Theory](./1%20-%20Lecture/260908%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%202.pdf)
+  - [Lecture Note - Exercise](./1%20-%20Lecture/260911%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%203.pdf)
+- Week 03: Land Use and Urban Growth
+  - [Lecture Note - Theory](./1%20-%20Lecture/260915%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%204.pdf)
+  - [Lecture Note - Exercise](./1%20-%20Lecture/260918%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%205.pdf)
+- Week 04: Road Networks and Traffic
+- Week 05: Integration of Urban Indicators and Intermediate Prototypes
 - Week 06: Midterm Project Presentation (No lecture)
-- Week 07: Agent-Based Urban Modeling
-- Week 08: Public Services, Infrastructure, and Environment
-- Week 09: Urban Economy, Finance, and Policy Scenarios
-- Week 10: User Interaction and Data Visualization
-- Week 11: Simulation Experiments, Validation, and Final Integration
+- Week 07: Actor-Based Modeling of Citizens, Households, and Businesses
+- Week 08: Public Services, Infrastructure, and the Environment
+- Week 09: Urban Economics, Public Finance, and Policy Experiments
+- Week 10: Interfaces, Visualization, and Digital Twins
+- Week 11: Repeated Experiments, Validation, and Final Integration
 - Week 12: Final Project Presentation and Report (No lecture)
 
 ### LLM (Large Language Models) policy
