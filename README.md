@@ -49,6 +49,7 @@ This course involves conducting projects designed to understand virtual spaces a
   - [Lecture Note - Exercise](./1%20-%20Lecture/260918%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%205.pdf)
 - Week 04: Road Networks and Traffic
   - [Lecture Note - Theory](./1%20-%20Lecture/260922%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%206.pdf)
+  - [Lecture Note - Exercise](./1%20-%20Lecture/260929%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%207.pdf)
 - Week 05: Integration of Urban Indicators and Intermediate Prototypes
 - Week 06: Midterm Project Presentation (No lecture)
 - Week 07: Actor-Based Modeling of Citizens, Households, and Businesses
