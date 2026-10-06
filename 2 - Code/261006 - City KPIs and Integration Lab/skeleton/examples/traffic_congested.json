@@ -1,0 +1,263 @@
+{
+  "format": "virtual-city-traffic-v1",
+  "city": {
+    "day": 0,
+    "budget": 100,
+    "demand": 3,
+    "departed": 0,
+    "grid": [
+      [
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "water",
+          "road": false,
+          "zone": null,
+          "building_id": null
+        }
+      ],
+      [
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": "R",
+          "building_id": "H"
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": null,
+          "building_id": "P"
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": "C",
+          "building_id": "J"
+        },
+        {
+          "terrain": "water",
+          "road": false,
+          "zone": null,
+          "building_id": null
+        }
+      ],
+      [
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": null,
+          "building_id": null
+        }
+      ],
+      [
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": "I",
+          "building_id": "F"
+        }
+      ]
+    ],
+    "buildings": {
+      "H": {
+        "id": "H",
+        "kind": "house",
+        "x": 0,
+        "y": 1,
+        "status": "operating",
+        "population": 6,
+        "capacity": 10
+      },
+      "P": {
+        "id": "P",
+        "kind": "park",
+        "x": 1,
+        "y": 1,
+        "status": "operating"
+      },
+      "J": {
+        "id": "J",
+        "kind": "shop",
+        "x": 3,
+        "y": 1,
+        "status": "operating",
+        "workers": 6,
+        "capacity": 12
+      },
+      "F": {
+        "id": "F",
+        "kind": "factory",
+        "x": 4,
+        "y": 3,
+        "status": "operating",
+        "workers": 8,
+        "capacity": 20
+      }
+    },
+    "rules": {
+      "growth_per_day": 2,
+      "tax_per_person_day": 3,
+      "maintenance_per_day": 10
+    },
+    "external_power": true
+  },
+  "traffic": {
+    "minute": 0,
+    "start": [
+      0,
+      2
+    ],
+    "goal": [
+      3,
+      2
+    ],
+    "selected_road": [
+      1,
+      2
+    ],
+    "arrivals": 8,
+    "last_served": 0,
+    "roads": [
+      {
+        "x": 2,
+        "y": 0,
+        "base_time_min": 1.0,
+        "capacity": 5,
+        "queue": 0
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "base_time_min": 1.0,
+        "capacity": 5,
+        "queue": 0
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "base_time_min": 1.0,
+        "capacity": 5,
+        "queue": 20
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "base_time_min": 1.0,
+        "capacity": 5,
+        "queue": 0
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "base_time_min": 1.0,
+        "capacity": 5,
+        "queue": 0
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "base_time_min": 1.0,
+        "capacity": 5,
+        "queue": 0
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "base_time_min": 1.0,
+        "capacity": 5,
+        "queue": 0
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "base_time_min": 1.0,
+        "capacity": 5,
+        "queue": 0
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "base_time_min": 1.0,
+        "capacity": 5,
+        "queue": 0
+      }
+    ]
+  }
+}

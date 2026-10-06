@@ -1,0 +1,630 @@
+{
+  "format": "city-kpi-expected-v1",
+  "time_limit_minutes": 4,
+  "queue_threshold": 5,
+  "note": "tiny-city model results; mean times are predicted trips, not observed completed trips",
+  "scenarios": {
+    "default": [
+      {
+        "minute": 0,
+        "population": 10,
+        "building_count": 4,
+        "planned_trips": 10,
+        "reachable_trips": 10,
+        "unreachable_trips": 0,
+        "within_limit_trips": 10,
+        "accessibility_ratio": 1.0,
+        "mean_time_min": 2.2,
+        "median_time_min": 3.0,
+        "p90_time_min": 3.0,
+        "developable_count": 2,
+        "developable_cells": [
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "observed_minutes": 0,
+        "congested_minutes": 0,
+        "peak_queue": null,
+        "current_queue": 0,
+        "history_rows": 1
+      },
+      {
+        "minute": 1,
+        "population": 10,
+        "building_count": 4,
+        "planned_trips": 10,
+        "reachable_trips": 10,
+        "unreachable_trips": 0,
+        "within_limit_trips": 10,
+        "accessibility_ratio": 1.0,
+        "mean_time_min": 2.56,
+        "median_time_min": 3.6,
+        "p90_time_min": 3.6,
+        "developable_count": 2,
+        "developable_cells": [
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "observed_minutes": 1,
+        "congested_minutes": 0,
+        "peak_queue": 0,
+        "current_queue": 3,
+        "history_rows": 2
+      },
+      {
+        "minute": 2,
+        "population": 10,
+        "building_count": 4,
+        "planned_trips": 10,
+        "reachable_trips": 10,
+        "unreachable_trips": 0,
+        "within_limit_trips": 4,
+        "accessibility_ratio": 0.4,
+        "mean_time_min": 2.92,
+        "median_time_min": 4.2,
+        "p90_time_min": 4.2,
+        "developable_count": 2,
+        "developable_cells": [
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "observed_minutes": 2,
+        "congested_minutes": 0,
+        "peak_queue": 3,
+        "current_queue": 6,
+        "history_rows": 3
+      },
+      {
+        "minute": 3,
+        "population": 10,
+        "building_count": 4,
+        "planned_trips": 10,
+        "reachable_trips": 10,
+        "unreachable_trips": 0,
+        "within_limit_trips": 4,
+        "accessibility_ratio": 0.4,
+        "mean_time_min": 3.28,
+        "median_time_min": 4.8,
+        "p90_time_min": 4.8,
+        "developable_count": 2,
+        "developable_cells": [
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "observed_minutes": 3,
+        "congested_minutes": 1,
+        "peak_queue": 6,
+        "current_queue": 9,
+        "history_rows": 4
+      },
+      {
+        "minute": 4,
+        "population": 10,
+        "building_count": 4,
+        "planned_trips": 10,
+        "reachable_trips": 10,
+        "unreachable_trips": 0,
+        "within_limit_trips": 4,
+        "accessibility_ratio": 0.4,
+        "mean_time_min": 3.4,
+        "median_time_min": 5.0,
+        "p90_time_min": 5.0,
+        "developable_count": 2,
+        "developable_cells": [
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "observed_minutes": 4,
+        "congested_minutes": 2,
+        "peak_queue": 9,
+        "current_queue": 12,
+        "history_rows": 5
+      },
+      {
+        "minute": 5,
+        "population": 10,
+        "building_count": 4,
+        "planned_trips": 10,
+        "reachable_trips": 10,
+        "unreachable_trips": 0,
+        "within_limit_trips": 4,
+        "accessibility_ratio": 0.4,
+        "mean_time_min": 3.4,
+        "median_time_min": 5.0,
+        "p90_time_min": 5.0,
+        "developable_count": 2,
+        "developable_cells": [
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "observed_minutes": 5,
+        "congested_minutes": 3,
+        "peak_queue": 12,
+        "current_queue": 15,
+        "history_rows": 6
+      }
+    ],
+    "congested": [
+      {
+        "minute": 0,
+        "population": 10,
+        "building_count": 4,
+        "planned_trips": 10,
+        "reachable_trips": 10,
+        "unreachable_trips": 0,
+        "within_limit_trips": 4,
+        "accessibility_ratio": 0.4,
+        "mean_time_min": 3.4,
+        "median_time_min": 5.0,
+        "p90_time_min": 5.0,
+        "developable_count": 2,
+        "developable_cells": [
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "observed_minutes": 0,
+        "congested_minutes": 0,
+        "peak_queue": null,
+        "current_queue": 20,
+        "history_rows": 1
+      },
+      {
+        "minute": 1,
+        "population": 10,
+        "building_count": 4,
+        "planned_trips": 10,
+        "reachable_trips": 10,
+        "unreachable_trips": 0,
+        "within_limit_trips": 4,
+        "accessibility_ratio": 0.4,
+        "mean_time_min": 3.4,
+        "median_time_min": 5.0,
+        "p90_time_min": 5.0,
+        "developable_count": 2,
+        "developable_cells": [
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "observed_minutes": 1,
+        "congested_minutes": 1,
+        "peak_queue": 20,
+        "current_queue": 23,
+        "history_rows": 2
+      },
+      {
+        "minute": 2,
+        "population": 10,
+        "building_count": 4,
+        "planned_trips": 10,
+        "reachable_trips": 10,
+        "unreachable_trips": 0,
+        "within_limit_trips": 4,
+        "accessibility_ratio": 0.4,
+        "mean_time_min": 3.4,
+        "median_time_min": 5.0,
+        "p90_time_min": 5.0,
+        "developable_count": 2,
+        "developable_cells": [
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "observed_minutes": 2,
+        "congested_minutes": 2,
+        "peak_queue": 23,
+        "current_queue": 26,
+        "history_rows": 3
+      },
+      {
+        "minute": 3,
+        "population": 10,
+        "building_count": 4,
+        "planned_trips": 10,
+        "reachable_trips": 10,
+        "unreachable_trips": 0,
+        "within_limit_trips": 4,
+        "accessibility_ratio": 0.4,
+        "mean_time_min": 3.4,
+        "median_time_min": 5.0,
+        "p90_time_min": 5.0,
+        "developable_count": 2,
+        "developable_cells": [
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "observed_minutes": 3,
+        "congested_minutes": 3,
+        "peak_queue": 26,
+        "current_queue": 29,
+        "history_rows": 4
+      },
+      {
+        "minute": 4,
+        "population": 10,
+        "building_count": 4,
+        "planned_trips": 10,
+        "reachable_trips": 10,
+        "unreachable_trips": 0,
+        "within_limit_trips": 4,
+        "accessibility_ratio": 0.4,
+        "mean_time_min": 3.4,
+        "median_time_min": 5.0,
+        "p90_time_min": 5.0,
+        "developable_count": 2,
+        "developable_cells": [
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "observed_minutes": 4,
+        "congested_minutes": 4,
+        "peak_queue": 29,
+        "current_queue": 32,
+        "history_rows": 5
+      },
+      {
+        "minute": 5,
+        "population": 10,
+        "building_count": 4,
+        "planned_trips": 10,
+        "reachable_trips": 10,
+        "unreachable_trips": 0,
+        "within_limit_trips": 4,
+        "accessibility_ratio": 0.4,
+        "mean_time_min": 3.4,
+        "median_time_min": 5.0,
+        "p90_time_min": 5.0,
+        "developable_count": 2,
+        "developable_cells": [
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "observed_minutes": 5,
+        "congested_minutes": 5,
+        "peak_queue": 32,
+        "current_queue": 35,
+        "history_rows": 6
+      }
+    ],
+    "disconnected": [
+      {
+        "minute": 0,
+        "population": 10,
+        "building_count": 4,
+        "planned_trips": 10,
+        "reachable_trips": 0,
+        "unreachable_trips": 10,
+        "within_limit_trips": 0,
+        "accessibility_ratio": 0.0,
+        "mean_time_min": null,
+        "median_time_min": null,
+        "p90_time_min": null,
+        "developable_count": 4,
+        "developable_cells": [
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "observed_minutes": 0,
+        "congested_minutes": 0,
+        "peak_queue": null,
+        "current_queue": 0,
+        "history_rows": 1
+      },
+      {
+        "minute": 1,
+        "population": 10,
+        "building_count": 4,
+        "planned_trips": 10,
+        "reachable_trips": 0,
+        "unreachable_trips": 10,
+        "within_limit_trips": 0,
+        "accessibility_ratio": 0.0,
+        "mean_time_min": null,
+        "median_time_min": null,
+        "p90_time_min": null,
+        "developable_count": 4,
+        "developable_cells": [
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "observed_minutes": 1,
+        "congested_minutes": 0,
+        "peak_queue": 0,
+        "current_queue": 3,
+        "history_rows": 2
+      },
+      {
+        "minute": 2,
+        "population": 10,
+        "building_count": 4,
+        "planned_trips": 10,
+        "reachable_trips": 0,
+        "unreachable_trips": 10,
+        "within_limit_trips": 0,
+        "accessibility_ratio": 0.0,
+        "mean_time_min": null,
+        "median_time_min": null,
+        "p90_time_min": null,
+        "developable_count": 4,
+        "developable_cells": [
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "observed_minutes": 2,
+        "congested_minutes": 0,
+        "peak_queue": 3,
+        "current_queue": 6,
+        "history_rows": 3
+      },
+      {
+        "minute": 3,
+        "population": 10,
+        "building_count": 4,
+        "planned_trips": 10,
+        "reachable_trips": 0,
+        "unreachable_trips": 10,
+        "within_limit_trips": 0,
+        "accessibility_ratio": 0.0,
+        "mean_time_min": null,
+        "median_time_min": null,
+        "p90_time_min": null,
+        "developable_count": 4,
+        "developable_cells": [
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "observed_minutes": 3,
+        "congested_minutes": 1,
+        "peak_queue": 6,
+        "current_queue": 9,
+        "history_rows": 4
+      },
+      {
+        "minute": 4,
+        "population": 10,
+        "building_count": 4,
+        "planned_trips": 10,
+        "reachable_trips": 0,
+        "unreachable_trips": 10,
+        "within_limit_trips": 0,
+        "accessibility_ratio": 0.0,
+        "mean_time_min": null,
+        "median_time_min": null,
+        "p90_time_min": null,
+        "developable_count": 4,
+        "developable_cells": [
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "observed_minutes": 4,
+        "congested_minutes": 2,
+        "peak_queue": 9,
+        "current_queue": 12,
+        "history_rows": 5
+      },
+      {
+        "minute": 5,
+        "population": 10,
+        "building_count": 4,
+        "planned_trips": 10,
+        "reachable_trips": 0,
+        "unreachable_trips": 10,
+        "within_limit_trips": 0,
+        "accessibility_ratio": 0.0,
+        "mean_time_min": null,
+        "median_time_min": null,
+        "p90_time_min": null,
+        "developable_count": 4,
+        "developable_cells": [
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "observed_minutes": 5,
+        "congested_minutes": 3,
+        "peak_queue": 12,
+        "current_queue": 15,
+        "history_rows": 6
+      }
+    ]
+  },
+  "distribution_example": {
+    "X": {
+      "times": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "planned_trips": 10,
+      "reachable_trips": 10,
+      "unreachable_trips": 0,
+      "within_limit_trips": 10,
+      "accessibility_ratio": 1.0,
+      "mean_time_min": 4.0,
+      "median_time_min": 4.0,
+      "p90_time_min": 4
+    },
+    "Y": {
+      "times": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        16,
+        16
+      ],
+      "planned_trips": 10,
+      "reachable_trips": 10,
+      "unreachable_trips": 0,
+      "within_limit_trips": 8,
+      "accessibility_ratio": 0.8,
+      "mean_time_min": 4.0,
+      "median_time_min": 1.0,
+      "p90_time_min": 16
+    }
+  }
+}
