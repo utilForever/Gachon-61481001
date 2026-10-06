@@ -1,0 +1,49 @@
+{
+  "note": "평균이 같은 두 집단의 설명용 자료이며 도시 실행 결과가 아닙니다.",
+  "groups": {
+    "X": {
+      "times": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "planned_trips": 10,
+      "reachable_trips": 10,
+      "unreachable_trips": 0,
+      "within_limit_trips": 10,
+      "accessibility_ratio": 1.0,
+      "mean_time_min": 4.0,
+      "median_time_min": 4.0,
+      "p90_time_min": 4
+    },
+    "Y": {
+      "times": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        16,
+        16
+      ],
+      "planned_trips": 10,
+      "reachable_trips": 10,
+      "unreachable_trips": 0,
+      "within_limit_trips": 8,
+      "accessibility_ratio": 0.8,
+      "mean_time_min": 4.0,
+      "median_time_min": 1.0,
+      "p90_time_min": 16
+    }
+  }
+}
