@@ -53,9 +53,9 @@ This course involves conducting projects designed to understand virtual spaces a
 - Week 05: Integration of Urban Indicators and Intermediate Prototypes
   - [Lecture Note - Theory](./1%20-%20Lecture/261002%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%208.pdf)
   - [Lecture Note - Exercise](./1%20-%20Lecture/261006%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%209.pdf)
-- Week 06: Midterm Project Presentation (No lecture)
-- Week 07: Actor-Based Modeling of Citizens, Households, and Businesses
-- Week 08: Public Services, Infrastructure, and the Environment
+- Week 06: Actor-Based Modeling of Citizens, Households, and Businesses
+- Week 07: Public Services, Infrastructure, and the Environment
+- Week 08: Midterm Project Presentation (No lecture)
 - Week 09: Urban Economics, Public Finance, and Policy Experiments
 - Week 10: Interfaces, Visualization, and Digital Twins
 - Week 11: Repeated Experiments, Validation, and Final Integration
