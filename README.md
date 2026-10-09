@@ -54,6 +54,7 @@ This course involves conducting projects designed to understand virtual spaces a
   - [Lecture Note - Theory](./1%20-%20Lecture/261002%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%208.pdf)
   - [Lecture Note - Exercise](./1%20-%20Lecture/261006%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%209.pdf)
 - Week 06: Actor-Based Modeling of Citizens, Households, and Businesses
+  - [Lecture Note - Theory](./1%20-%20Lecture/261009%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%2010.pdf)
 - Week 07: Public Services, Infrastructure, and the Environment
 - Week 08: Midterm Project Presentation (No lecture)
 - Week 09: Urban Economics, Public Finance, and Policy Experiments
