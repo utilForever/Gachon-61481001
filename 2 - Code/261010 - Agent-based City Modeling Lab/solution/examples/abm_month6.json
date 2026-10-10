@@ -1,0 +1,478 @@
+{
+  "format": "virtual-city-abm-v1",
+  "city": {
+    "day": 0,
+    "budget": 100,
+    "demand": 3,
+    "departed": 0,
+    "grid": [
+      [
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": "R",
+          "building_id": "A"
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": "R",
+          "building_id": "C"
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": "R",
+          "building_id": "B"
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": "R",
+          "building_id": "D"
+        },
+        {
+          "terrain": "water",
+          "road": false,
+          "zone": null,
+          "building_id": null
+        }
+      ],
+      [
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "water",
+          "road": false,
+          "zone": null,
+          "building_id": null
+        }
+      ],
+      [
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": null,
+          "building_id": null
+        }
+      ],
+      [
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": "C",
+          "building_id": "Y"
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": null,
+          "building_id": "P"
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": "C",
+          "building_id": "X"
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": null,
+          "building_id": null
+        }
+      ]
+    ],
+    "buildings": {
+      "A": {
+        "id": "A",
+        "kind": "house",
+        "x": 0,
+        "y": 0,
+        "population": 0,
+        "capacity": 4,
+        "status": "operating"
+      },
+      "B": {
+        "id": "B",
+        "kind": "house",
+        "x": 2,
+        "y": 0,
+        "population": 2,
+        "capacity": 4,
+        "status": "operating"
+      },
+      "C": {
+        "id": "C",
+        "kind": "house",
+        "x": 1,
+        "y": 0,
+        "population": 0,
+        "capacity": 4,
+        "status": "operating"
+      },
+      "D": {
+        "id": "D",
+        "kind": "house",
+        "x": 3,
+        "y": 0,
+        "population": 1,
+        "capacity": 4,
+        "status": "operating"
+      },
+      "X": {
+        "id": "X",
+        "kind": "shop",
+        "x": 3,
+        "y": 3,
+        "workers": 0,
+        "capacity": 8,
+        "status": "operating"
+      },
+      "Y": {
+        "id": "Y",
+        "kind": "shop",
+        "x": 0,
+        "y": 3,
+        "workers": 2,
+        "capacity": 8,
+        "status": "operating"
+      },
+      "P": {
+        "id": "P",
+        "kind": "park",
+        "x": 2,
+        "y": 3,
+        "status": "operating"
+      }
+    },
+    "rules": {
+      "growth_per_day": 2,
+      "tax_per_person_day": 3,
+      "maintenance_per_day": 10
+    },
+    "external_power": true
+  },
+  "transport": {
+    "minute": 0,
+    "start": [
+      0,
+      2
+    ],
+    "goal": [
+      3,
+      2
+    ],
+    "selected_road": [
+      1,
+      1
+    ],
+    "arrivals": 8,
+    "last_served": 0,
+    "roads": [
+      {
+        "position": [
+          0,
+          1
+        ],
+        "base_time": 10,
+        "capacity": 5,
+        "queue": 0
+      },
+      {
+        "position": [
+          1,
+          1
+        ],
+        "base_time": 10,
+        "capacity": 5,
+        "queue": 0
+      },
+      {
+        "position": [
+          2,
+          1
+        ],
+        "base_time": 15,
+        "capacity": 5,
+        "queue": 0
+      },
+      {
+        "position": [
+          3,
+          1
+        ],
+        "base_time": 5,
+        "capacity": 5,
+        "queue": 0
+      },
+      {
+        "position": [
+          0,
+          2
+        ],
+        "base_time": 5,
+        "capacity": 5,
+        "queue": 0
+      },
+      {
+        "position": [
+          1,
+          2
+        ],
+        "base_time": 100,
+        "capacity": 5,
+        "queue": 0
+      },
+      {
+        "position": [
+          2,
+          2
+        ],
+        "base_time": 100,
+        "capacity": 5,
+        "queue": 0
+      },
+      {
+        "position": [
+          3,
+          2
+        ],
+        "base_time": 15,
+        "capacity": 5,
+        "queue": 0
+      }
+    ]
+  },
+  "history": [],
+  "observations": [],
+  "settings": {
+    "scenario": "default",
+    "limit_minutes": 30,
+    "queue_threshold": 5,
+    "protected": [
+      [
+        4,
+        3
+      ]
+    ],
+    "commute_target": "X"
+  },
+  "agents": {
+    "month": 6,
+    "seed": 42,
+    "history": [
+      {
+        "month": 0,
+        "H1_home": "A",
+        "H1_score": 40.5,
+        "H1_savings": 150,
+        "F1_site": "X",
+        "F1_cash": 700,
+        "mean_commute": 30.0,
+        "dissatisfied": 1
+      },
+      {
+        "month": 1,
+        "H1_home": "A",
+        "H1_score": 40.5,
+        "H1_savings": 150,
+        "F1_site": "X",
+        "F1_cash": 700,
+        "mean_commute": 30.0,
+        "dissatisfied": 1
+      },
+      {
+        "month": 2,
+        "H1_home": "B",
+        "H1_score": 62.333333333333336,
+        "H1_savings": 120,
+        "F1_site": "X",
+        "F1_cash": 700,
+        "mean_commute": 17.5,
+        "dissatisfied": 0
+      },
+      {
+        "month": 3,
+        "H1_home": "B",
+        "H1_score": 58.166666666666664,
+        "H1_savings": 120,
+        "F1_site": "Y",
+        "F1_cash": 200,
+        "mean_commute": 32.5,
+        "dissatisfied": 0
+      },
+      {
+        "month": 4,
+        "H1_home": "B",
+        "H1_score": 58.166666666666664,
+        "H1_savings": 120,
+        "F1_site": "Y",
+        "F1_cash": 200,
+        "mean_commute": 32.5,
+        "dissatisfied": 0
+      },
+      {
+        "month": 5,
+        "H1_home": "B",
+        "H1_score": 58.166666666666664,
+        "H1_savings": 120,
+        "F1_site": "Y",
+        "F1_cash": 200,
+        "mean_commute": 32.5,
+        "dissatisfied": 0
+      },
+      {
+        "month": 6,
+        "H1_home": "B",
+        "H1_score": 58.166666666666664,
+        "H1_savings": 120,
+        "F1_site": "Y",
+        "F1_cash": 200,
+        "mean_commute": 32.5,
+        "dissatisfied": 0
+      }
+    ],
+    "events": [
+      "2개월: H1 A → B",
+      "3개월: F1 X → Y"
+    ],
+    "citizens": {
+      "P1": {
+        "household_id": "H1",
+        "employer_id": "F1"
+      },
+      "P2": {
+        "household_id": "H1",
+        "employer_id": null
+      },
+      "P3": {
+        "household_id": "H2",
+        "employer_id": "F1"
+      }
+    },
+    "households": {
+      "H1": {
+        "home_id": "B",
+        "members": [
+          "P1",
+          "P2"
+        ],
+        "income": 200,
+        "rent_budget": 100,
+        "savings": 120,
+        "move_cost": 30,
+        "dissatisfied_months": 0,
+        "cooldown": 0
+      },
+      "H2": {
+        "home_id": "D",
+        "members": [
+          "P3"
+        ],
+        "income": 240,
+        "rent_budget": 120,
+        "savings": 100,
+        "move_cost": 30,
+        "dissatisfied_months": 0,
+        "cooldown": 0
+      }
+    },
+    "houses": {
+      "A": {
+        "rent": 80,
+        "environment": 50,
+        "occupant": null
+      },
+      "B": {
+        "rent": 100,
+        "environment": 70,
+        "occupant": "H1"
+      },
+      "C": {
+        "rent": 130,
+        "environment": 60,
+        "occupant": null
+      },
+      "D": {
+        "rent": 90,
+        "environment": 80,
+        "occupant": "H2"
+      }
+    },
+    "firms": {
+      "F1": {
+        "site_id": "Y",
+        "employees": [
+          "P1",
+          "P3"
+        ],
+        "profit": 260,
+        "cash": 200,
+        "move_cost": 500
+      }
+    },
+    "sites": {
+      "X": {
+        "occupant": null,
+        "profit": 150
+      },
+      "Y": {
+        "occupant": "F1",
+        "profit": 260
+      }
+    }
+  }
+}
