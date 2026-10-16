@@ -58,6 +58,7 @@ This course involves conducting projects designed to understand virtual spaces a
   - [Lecture Note - Exercise](./1%20-%20Lecture/261010%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%2011.pdf)
 - Week 07: Public Services, Infrastructure, and the Environment
   - [Lecture Note - Theory](./1%20-%20Lecture/261013%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%2012.pdf)
+  - [lecture Node - Exersie](./1%20-%20Lecture/261016%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%2013.pdf)
 - Week 08: Midterm Project Presentation (No lecture)
 - Week 09: Urban Economics, Public Finance, and Policy Experiments
 - Week 10: Interfaces, Visualization, and Digital Twins
