@@ -1,0 +1,519 @@
+{
+  "format": "virtual-city-kpi-v1",
+  "city": {
+    "day": 0,
+    "budget": 100,
+    "demand": 3,
+    "departed": 0,
+    "grid": [
+      [
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "water",
+          "road": false,
+          "zone": null,
+          "building_id": null
+        }
+      ],
+      [
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": "R",
+          "building_id": "H"
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": null,
+          "building_id": "P"
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": "R",
+          "building_id": "A"
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": "C",
+          "building_id": "J"
+        },
+        {
+          "terrain": "water",
+          "road": false,
+          "zone": null,
+          "building_id": null
+        }
+      ],
+      [
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": null,
+          "building_id": null
+        }
+      ],
+      [
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": true,
+          "zone": null,
+          "building_id": null
+        },
+        {
+          "terrain": "land",
+          "road": false,
+          "zone": "I",
+          "building_id": "F"
+        }
+      ]
+    ],
+    "buildings": {
+      "H": {
+        "id": "H",
+        "kind": "house",
+        "x": 0,
+        "y": 1,
+        "status": "operating",
+        "population": 6,
+        "capacity": 10
+      },
+      "P": {
+        "id": "P",
+        "kind": "park",
+        "x": 1,
+        "y": 1,
+        "status": "operating"
+      },
+      "J": {
+        "id": "J",
+        "kind": "shop",
+        "x": 3,
+        "y": 1,
+        "status": "operating",
+        "workers": 6,
+        "capacity": 12
+      },
+      "F": {
+        "id": "F",
+        "kind": "factory",
+        "x": 4,
+        "y": 3,
+        "status": "operating",
+        "workers": 8,
+        "capacity": 20
+      },
+      "A": {
+        "id": "A",
+        "kind": "house",
+        "x": 2,
+        "y": 1,
+        "population": 4,
+        "capacity": 10,
+        "status": "operating"
+      }
+    },
+    "rules": {
+      "growth_per_day": 2,
+      "tax_per_person_day": 3,
+      "maintenance_per_day": 10
+    },
+    "external_power": true
+  },
+  "transport": {
+    "minute": 5,
+    "start": [
+      0,
+      2
+    ],
+    "goal": [
+      3,
+      2
+    ],
+    "selected_road": [
+      1,
+      2
+    ],
+    "arrivals": 8,
+    "last_served": 5,
+    "roads": [
+      {
+        "position": [
+          2,
+          0
+        ],
+        "base_time": 1.0,
+        "capacity": 5,
+        "queue": 0
+      },
+      {
+        "position": [
+          0,
+          2
+        ],
+        "base_time": 1.0,
+        "capacity": 5,
+        "queue": 0
+      },
+      {
+        "position": [
+          1,
+          2
+        ],
+        "base_time": 1.0,
+        "capacity": 5,
+        "queue": 15
+      },
+      {
+        "position": [
+          2,
+          2
+        ],
+        "base_time": 1.0,
+        "capacity": 5,
+        "queue": 0
+      },
+      {
+        "position": [
+          3,
+          2
+        ],
+        "base_time": 1.0,
+        "capacity": 5,
+        "queue": 0
+      },
+      {
+        "position": [
+          0,
+          3
+        ],
+        "base_time": 1.0,
+        "capacity": 5,
+        "queue": 0
+      },
+      {
+        "position": [
+          1,
+          3
+        ],
+        "base_time": 1.0,
+        "capacity": 5,
+        "queue": 0
+      },
+      {
+        "position": [
+          2,
+          3
+        ],
+        "base_time": 1.0,
+        "capacity": 5,
+        "queue": 0
+      },
+      {
+        "position": [
+          3,
+          3
+        ],
+        "base_time": 1.0,
+        "capacity": 5,
+        "queue": 0
+      }
+    ]
+  },
+  "history": [
+    {
+      "population": 10,
+      "building_count": 4,
+      "planned_trips": 10,
+      "reachable_trips": 10,
+      "unreachable_trips": 0,
+      "within_limit_trips": 10,
+      "accessibility_ratio": 1.0,
+      "mean_time_min": 2.2,
+      "median_time_min": 3.0,
+      "p90_time_min": 3.0,
+      "developable_count": 2,
+      "developable_cells": [
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "observed_minutes": 0,
+      "congested_minutes": 0,
+      "peak_queue": null,
+      "current_queue": 0,
+      "minute": 0
+    },
+    {
+      "population": 10,
+      "building_count": 4,
+      "planned_trips": 10,
+      "reachable_trips": 10,
+      "unreachable_trips": 0,
+      "within_limit_trips": 10,
+      "accessibility_ratio": 1.0,
+      "mean_time_min": 2.56,
+      "median_time_min": 3.6,
+      "p90_time_min": 3.6,
+      "developable_count": 2,
+      "developable_cells": [
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "observed_minutes": 1,
+      "congested_minutes": 0,
+      "peak_queue": 0,
+      "current_queue": 3,
+      "minute": 1
+    },
+    {
+      "population": 10,
+      "building_count": 4,
+      "planned_trips": 10,
+      "reachable_trips": 10,
+      "unreachable_trips": 0,
+      "within_limit_trips": 4,
+      "accessibility_ratio": 0.4,
+      "mean_time_min": 2.92,
+      "median_time_min": 4.2,
+      "p90_time_min": 4.2,
+      "developable_count": 2,
+      "developable_cells": [
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "observed_minutes": 2,
+      "congested_minutes": 0,
+      "peak_queue": 3,
+      "current_queue": 6,
+      "minute": 2
+    },
+    {
+      "population": 10,
+      "building_count": 4,
+      "planned_trips": 10,
+      "reachable_trips": 10,
+      "unreachable_trips": 0,
+      "within_limit_trips": 4,
+      "accessibility_ratio": 0.4,
+      "mean_time_min": 3.28,
+      "median_time_min": 4.8,
+      "p90_time_min": 4.8,
+      "developable_count": 2,
+      "developable_cells": [
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "observed_minutes": 3,
+      "congested_minutes": 1,
+      "peak_queue": 6,
+      "current_queue": 9,
+      "minute": 3
+    },
+    {
+      "population": 10,
+      "building_count": 4,
+      "planned_trips": 10,
+      "reachable_trips": 10,
+      "unreachable_trips": 0,
+      "within_limit_trips": 4,
+      "accessibility_ratio": 0.4,
+      "mean_time_min": 3.4,
+      "median_time_min": 5.0,
+      "p90_time_min": 5.0,
+      "developable_count": 2,
+      "developable_cells": [
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "observed_minutes": 4,
+      "congested_minutes": 2,
+      "peak_queue": 9,
+      "current_queue": 12,
+      "minute": 4
+    },
+    {
+      "population": 10,
+      "building_count": 4,
+      "planned_trips": 10,
+      "reachable_trips": 10,
+      "unreachable_trips": 0,
+      "within_limit_trips": 4,
+      "accessibility_ratio": 0.4,
+      "mean_time_min": 3.4,
+      "median_time_min": 5.0,
+      "p90_time_min": 5.0,
+      "developable_count": 2,
+      "developable_cells": [
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "observed_minutes": 5,
+      "congested_minutes": 3,
+      "peak_queue": 12,
+      "current_queue": 15,
+      "minute": 5
+    }
+  ],
+  "settings": {
+    "scenario": "default",
+    "limit_minutes": 4.0,
+    "queue_threshold": 5,
+    "protected": [
+      [
+        1,
+        0
+      ]
+    ],
+    "commute_target": "J"
+  },
+  "observations": [
+    {
+      "start_minute": 0,
+      "duration_min": 1,
+      "queue": 0,
+      "road": [
+        1,
+        2
+      ]
+    },
+    {
+      "start_minute": 1,
+      "duration_min": 1,
+      "queue": 3,
+      "road": [
+        1,
+        2
+      ]
+    },
+    {
+      "start_minute": 2,
+      "duration_min": 1,
+      "queue": 6,
+      "road": [
+        1,
+        2
+      ]
+    },
+    {
+      "start_minute": 3,
+      "duration_min": 1,
+      "queue": 9,
+      "road": [
+        1,
+        2
+      ]
+    },
+    {
+      "start_minute": 4,
+      "duration_min": 1,
+      "queue": 12,
+      "road": [
+        1,
+        2
+      ]
+    }
+  ]
+}

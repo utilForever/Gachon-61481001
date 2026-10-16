@@ -1,0 +1,153 @@
+{
+  "monthly": [
+    {
+      "month": 0,
+      "H1_home": "A",
+      "H1_score": 40.5,
+      "H1_savings": 150,
+      "F1_site": "X",
+      "F1_cash": 700,
+      "mean_commute": 30.0,
+      "dissatisfied": 1
+    },
+    {
+      "month": 1,
+      "H1_home": "A",
+      "H1_score": 40.5,
+      "H1_savings": 150,
+      "F1_site": "X",
+      "F1_cash": 700,
+      "mean_commute": 30.0,
+      "dissatisfied": 1
+    },
+    {
+      "month": 2,
+      "H1_home": "B",
+      "H1_score": 62.333333333333336,
+      "H1_savings": 120,
+      "F1_site": "X",
+      "F1_cash": 700,
+      "mean_commute": 17.5,
+      "dissatisfied": 0
+    },
+    {
+      "month": 3,
+      "H1_home": "B",
+      "H1_score": 58.166666666666664,
+      "H1_savings": 120,
+      "F1_site": "Y",
+      "F1_cash": 200,
+      "mean_commute": 32.5,
+      "dissatisfied": 0
+    },
+    {
+      "month": 4,
+      "H1_home": "B",
+      "H1_score": 58.166666666666664,
+      "H1_savings": 120,
+      "F1_site": "Y",
+      "F1_cash": 200,
+      "mean_commute": 32.5,
+      "dissatisfied": 0
+    },
+    {
+      "month": 5,
+      "H1_home": "B",
+      "H1_score": 58.166666666666664,
+      "H1_savings": 120,
+      "F1_site": "Y",
+      "F1_cash": 200,
+      "mean_commute": 32.5,
+      "dissatisfied": 0
+    },
+    {
+      "month": 6,
+      "H1_home": "B",
+      "H1_score": 58.166666666666664,
+      "H1_savings": 120,
+      "F1_site": "Y",
+      "F1_cash": 200,
+      "mean_commute": 32.5,
+      "dissatisfied": 0
+    }
+  ],
+  "neighborhood": [
+    {
+      "round": 0,
+      "moves": 0,
+      "moves_total": 0,
+      "dissatisfied": 21,
+      "mean_ratio": 0.46790476190476193
+    },
+    {
+      "round": 1,
+      "moves": 15,
+      "moves_total": 15,
+      "dissatisfied": 2,
+      "mean_ratio": 0.7146190476190476
+    },
+    {
+      "round": 2,
+      "moves": 2,
+      "moves_total": 17,
+      "dissatisfied": 2,
+      "mean_ratio": 0.7513333333333334
+    },
+    {
+      "round": 3,
+      "moves": 2,
+      "moves_total": 19,
+      "dissatisfied": 2,
+      "mean_ratio": 0.7753809523809524
+    },
+    {
+      "round": 4,
+      "moves": 2,
+      "moves_total": 21,
+      "dissatisfied": 2,
+      "mean_ratio": 0.7936428571428571
+    },
+    {
+      "round": 5,
+      "moves": 2,
+      "moves_total": 23,
+      "dissatisfied": 1,
+      "mean_ratio": 0.8424047619047619
+    },
+    {
+      "round": 6,
+      "moves": 1,
+      "moves_total": 24,
+      "dissatisfied": 2,
+      "mean_ratio": 0.836952380952381
+    },
+    {
+      "round": 7,
+      "moves": 2,
+      "moves_total": 26,
+      "dissatisfied": 1,
+      "mean_ratio": 0.8781428571428571
+    },
+    {
+      "round": 8,
+      "moves": 1,
+      "moves_total": 27,
+      "dissatisfied": 1,
+      "mean_ratio": 0.8947619047619049
+    },
+    {
+      "round": 9,
+      "moves": 1,
+      "moves_total": 28,
+      "dissatisfied": 0,
+      "mean_ratio": 0.9099761904761905
+    },
+    {
+      "round": 10,
+      "moves": 0,
+      "moves_total": 28,
+      "dissatisfied": 0,
+      "mean_ratio": 0.9099761904761905
+    }
+  ]
+}
