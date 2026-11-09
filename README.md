@@ -67,6 +67,7 @@ This course involves conducting projects designed to understand virtual spaces a
   - [Lecture Note - Theory](./1%20-%20Lecture/261103%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%2016.pdf)
   - [Lecture Note - Exercise](./1%20-%20Lecture/261106%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%2017.pdf)
 - Week 11: Repeated Experiments, Validation, and Final Integration
+  - [Lecture Note - Theory](./1%20-%20Lecture/261110%20가천대학교%20-%20가상공간과%20메타버스%20-%20Lecture%2018.pdf)
 - Week 12: Final Project Presentation and Report (No lecture)
 
 ### LLM (Large Language Models) policy
