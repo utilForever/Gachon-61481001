@@ -1,0 +1,3067 @@
+{
+  "schema_version": 1,
+  "code_version": "2026.11.13.1",
+  "python_version": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "created_at": "2026-11-11T15:09:41.422053+00:00",
+  "code_sha256": {
+    "validation_rules.py": "aea8a2e8637acd3ef95961e340590f0e79a42c5fb214cdda687b32de433546b4",
+    "service_rules.py": "cf3f88a81ed187b2848feea28e552c54352c7d0db2c797fd9c572943cbe39e2d",
+    "validation_support.py": "5130d7cd78fa1ab585e3f0a7a32cba00869426ba1918f8136267ca6b4478c1a1"
+  },
+  "settings": {
+    "first_seed": 101,
+    "count": 30,
+    "hours": 6,
+    "low": 6,
+    "high": 14,
+    "baseline_capacity": 8,
+    "policy_capacity": 10
+  },
+  "assumptions": {
+    "target": "병원 H의 대기열",
+    "initial_queue": 0,
+    "time_step": "1시간",
+    "metric": "실행 종료 시점의 대기 인원(명)",
+    "arrivals": "시간별 독립 이산 균등분포",
+    "fixed": "도로와 서비스 대상 고정, 전력·급수 충분",
+    "excluded": "확충 비용, 추가 수요, 대기 포기, 환자 우선순위",
+    "city_state": "현재 도시 상태를 변경하지 않는 별도 실험"
+  },
+  "records": [
+    {
+      "seed": 101,
+      "arrivals": [
+        9,
+        14,
+        11,
+        13,
+        6,
+        14
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 1
+          },
+          {
+            "hour": 2,
+            "arrivals": 14,
+            "served": 8,
+            "queue": 7
+          },
+          {
+            "hour": 3,
+            "arrivals": 11,
+            "served": 8,
+            "queue": 10
+          },
+          {
+            "hour": 4,
+            "arrivals": 13,
+            "served": 8,
+            "queue": 15
+          },
+          {
+            "hour": 5,
+            "arrivals": 6,
+            "served": 8,
+            "queue": 13
+          },
+          {
+            "hour": 6,
+            "arrivals": 14,
+            "served": 8,
+            "queue": 19
+          }
+        ],
+        "final_queue": 19
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 9,
+            "served": 9,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 14,
+            "served": 10,
+            "queue": 4
+          },
+          {
+            "hour": 3,
+            "arrivals": 11,
+            "served": 10,
+            "queue": 5
+          },
+          {
+            "hour": 4,
+            "arrivals": 13,
+            "served": 10,
+            "queue": 8
+          },
+          {
+            "hour": 5,
+            "arrivals": 6,
+            "served": 10,
+            "queue": 4
+          },
+          {
+            "hour": 6,
+            "arrivals": 14,
+            "served": 10,
+            "queue": 8
+          }
+        ],
+        "final_queue": 8
+      },
+      "reduction": 11
+    },
+    {
+      "seed": 102,
+      "arrivals": [
+        8,
+        11,
+        8,
+        14,
+        8,
+        12
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 11,
+            "served": 8,
+            "queue": 3
+          },
+          {
+            "hour": 3,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 3
+          },
+          {
+            "hour": 4,
+            "arrivals": 14,
+            "served": 8,
+            "queue": 9
+          },
+          {
+            "hour": 5,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 9
+          },
+          {
+            "hour": 6,
+            "arrivals": 12,
+            "served": 8,
+            "queue": 13
+          }
+        ],
+        "final_queue": 13
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 11,
+            "served": 10,
+            "queue": 1
+          },
+          {
+            "hour": 3,
+            "arrivals": 8,
+            "served": 9,
+            "queue": 0
+          },
+          {
+            "hour": 4,
+            "arrivals": 14,
+            "served": 10,
+            "queue": 4
+          },
+          {
+            "hour": 5,
+            "arrivals": 8,
+            "served": 10,
+            "queue": 2
+          },
+          {
+            "hour": 6,
+            "arrivals": 12,
+            "served": 10,
+            "queue": 4
+          }
+        ],
+        "final_queue": 4
+      },
+      "reduction": 9
+    },
+    {
+      "seed": 103,
+      "arrivals": [
+        13,
+        9,
+        7,
+        7,
+        12,
+        13
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 13,
+            "served": 8,
+            "queue": 5
+          },
+          {
+            "hour": 2,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 6
+          },
+          {
+            "hour": 3,
+            "arrivals": 7,
+            "served": 8,
+            "queue": 5
+          },
+          {
+            "hour": 4,
+            "arrivals": 7,
+            "served": 8,
+            "queue": 4
+          },
+          {
+            "hour": 5,
+            "arrivals": 12,
+            "served": 8,
+            "queue": 8
+          },
+          {
+            "hour": 6,
+            "arrivals": 13,
+            "served": 8,
+            "queue": 13
+          }
+        ],
+        "final_queue": 13
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 13,
+            "served": 10,
+            "queue": 3
+          },
+          {
+            "hour": 2,
+            "arrivals": 9,
+            "served": 10,
+            "queue": 2
+          },
+          {
+            "hour": 3,
+            "arrivals": 7,
+            "served": 9,
+            "queue": 0
+          },
+          {
+            "hour": 4,
+            "arrivals": 7,
+            "served": 7,
+            "queue": 0
+          },
+          {
+            "hour": 5,
+            "arrivals": 12,
+            "served": 10,
+            "queue": 2
+          },
+          {
+            "hour": 6,
+            "arrivals": 13,
+            "served": 10,
+            "queue": 5
+          }
+        ],
+        "final_queue": 5
+      },
+      "reduction": 8
+    },
+    {
+      "seed": 104,
+      "arrivals": [
+        6,
+        9,
+        9,
+        12,
+        11,
+        6
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 6,
+            "served": 6,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 1
+          },
+          {
+            "hour": 3,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 2
+          },
+          {
+            "hour": 4,
+            "arrivals": 12,
+            "served": 8,
+            "queue": 6
+          },
+          {
+            "hour": 5,
+            "arrivals": 11,
+            "served": 8,
+            "queue": 9
+          },
+          {
+            "hour": 6,
+            "arrivals": 6,
+            "served": 8,
+            "queue": 7
+          }
+        ],
+        "final_queue": 7
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 6,
+            "served": 6,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 9,
+            "served": 9,
+            "queue": 0
+          },
+          {
+            "hour": 3,
+            "arrivals": 9,
+            "served": 9,
+            "queue": 0
+          },
+          {
+            "hour": 4,
+            "arrivals": 12,
+            "served": 10,
+            "queue": 2
+          },
+          {
+            "hour": 5,
+            "arrivals": 11,
+            "served": 10,
+            "queue": 3
+          },
+          {
+            "hour": 6,
+            "arrivals": 6,
+            "served": 9,
+            "queue": 0
+          }
+        ],
+        "final_queue": 0
+      },
+      "reduction": 7
+    },
+    {
+      "seed": 105,
+      "arrivals": [
+        11,
+        7,
+        6,
+        10,
+        14,
+        11
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 11,
+            "served": 8,
+            "queue": 3
+          },
+          {
+            "hour": 2,
+            "arrivals": 7,
+            "served": 8,
+            "queue": 2
+          },
+          {
+            "hour": 3,
+            "arrivals": 6,
+            "served": 8,
+            "queue": 0
+          },
+          {
+            "hour": 4,
+            "arrivals": 10,
+            "served": 8,
+            "queue": 2
+          },
+          {
+            "hour": 5,
+            "arrivals": 14,
+            "served": 8,
+            "queue": 8
+          },
+          {
+            "hour": 6,
+            "arrivals": 11,
+            "served": 8,
+            "queue": 11
+          }
+        ],
+        "final_queue": 11
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 11,
+            "served": 10,
+            "queue": 1
+          },
+          {
+            "hour": 2,
+            "arrivals": 7,
+            "served": 8,
+            "queue": 0
+          },
+          {
+            "hour": 3,
+            "arrivals": 6,
+            "served": 6,
+            "queue": 0
+          },
+          {
+            "hour": 4,
+            "arrivals": 10,
+            "served": 10,
+            "queue": 0
+          },
+          {
+            "hour": 5,
+            "arrivals": 14,
+            "served": 10,
+            "queue": 4
+          },
+          {
+            "hour": 6,
+            "arrivals": 11,
+            "served": 10,
+            "queue": 5
+          }
+        ],
+        "final_queue": 5
+      },
+      "reduction": 6
+    },
+    {
+      "seed": 106,
+      "arrivals": [
+        13,
+        6,
+        14,
+        14,
+        13,
+        6
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 13,
+            "served": 8,
+            "queue": 5
+          },
+          {
+            "hour": 2,
+            "arrivals": 6,
+            "served": 8,
+            "queue": 3
+          },
+          {
+            "hour": 3,
+            "arrivals": 14,
+            "served": 8,
+            "queue": 9
+          },
+          {
+            "hour": 4,
+            "arrivals": 14,
+            "served": 8,
+            "queue": 15
+          },
+          {
+            "hour": 5,
+            "arrivals": 13,
+            "served": 8,
+            "queue": 20
+          },
+          {
+            "hour": 6,
+            "arrivals": 6,
+            "served": 8,
+            "queue": 18
+          }
+        ],
+        "final_queue": 18
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 13,
+            "served": 10,
+            "queue": 3
+          },
+          {
+            "hour": 2,
+            "arrivals": 6,
+            "served": 9,
+            "queue": 0
+          },
+          {
+            "hour": 3,
+            "arrivals": 14,
+            "served": 10,
+            "queue": 4
+          },
+          {
+            "hour": 4,
+            "arrivals": 14,
+            "served": 10,
+            "queue": 8
+          },
+          {
+            "hour": 5,
+            "arrivals": 13,
+            "served": 10,
+            "queue": 11
+          },
+          {
+            "hour": 6,
+            "arrivals": 6,
+            "served": 10,
+            "queue": 7
+          }
+        ],
+        "final_queue": 7
+      },
+      "reduction": 11
+    },
+    {
+      "seed": 107,
+      "arrivals": [
+        9,
+        12,
+        13,
+        10,
+        8,
+        12
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 1
+          },
+          {
+            "hour": 2,
+            "arrivals": 12,
+            "served": 8,
+            "queue": 5
+          },
+          {
+            "hour": 3,
+            "arrivals": 13,
+            "served": 8,
+            "queue": 10
+          },
+          {
+            "hour": 4,
+            "arrivals": 10,
+            "served": 8,
+            "queue": 12
+          },
+          {
+            "hour": 5,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 12
+          },
+          {
+            "hour": 6,
+            "arrivals": 12,
+            "served": 8,
+            "queue": 16
+          }
+        ],
+        "final_queue": 16
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 9,
+            "served": 9,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 12,
+            "served": 10,
+            "queue": 2
+          },
+          {
+            "hour": 3,
+            "arrivals": 13,
+            "served": 10,
+            "queue": 5
+          },
+          {
+            "hour": 4,
+            "arrivals": 10,
+            "served": 10,
+            "queue": 5
+          },
+          {
+            "hour": 5,
+            "arrivals": 8,
+            "served": 10,
+            "queue": 3
+          },
+          {
+            "hour": 6,
+            "arrivals": 12,
+            "served": 10,
+            "queue": 5
+          }
+        ],
+        "final_queue": 5
+      },
+      "reduction": 11
+    },
+    {
+      "seed": 108,
+      "arrivals": [
+        8,
+        7,
+        12,
+        10,
+        12,
+        9
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 7,
+            "served": 7,
+            "queue": 0
+          },
+          {
+            "hour": 3,
+            "arrivals": 12,
+            "served": 8,
+            "queue": 4
+          },
+          {
+            "hour": 4,
+            "arrivals": 10,
+            "served": 8,
+            "queue": 6
+          },
+          {
+            "hour": 5,
+            "arrivals": 12,
+            "served": 8,
+            "queue": 10
+          },
+          {
+            "hour": 6,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 11
+          }
+        ],
+        "final_queue": 11
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 7,
+            "served": 7,
+            "queue": 0
+          },
+          {
+            "hour": 3,
+            "arrivals": 12,
+            "served": 10,
+            "queue": 2
+          },
+          {
+            "hour": 4,
+            "arrivals": 10,
+            "served": 10,
+            "queue": 2
+          },
+          {
+            "hour": 5,
+            "arrivals": 12,
+            "served": 10,
+            "queue": 4
+          },
+          {
+            "hour": 6,
+            "arrivals": 9,
+            "served": 10,
+            "queue": 3
+          }
+        ],
+        "final_queue": 3
+      },
+      "reduction": 8
+    },
+    {
+      "seed": 109,
+      "arrivals": [
+        10,
+        9,
+        13,
+        13,
+        14,
+        6
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 10,
+            "served": 8,
+            "queue": 2
+          },
+          {
+            "hour": 2,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 3
+          },
+          {
+            "hour": 3,
+            "arrivals": 13,
+            "served": 8,
+            "queue": 8
+          },
+          {
+            "hour": 4,
+            "arrivals": 13,
+            "served": 8,
+            "queue": 13
+          },
+          {
+            "hour": 5,
+            "arrivals": 14,
+            "served": 8,
+            "queue": 19
+          },
+          {
+            "hour": 6,
+            "arrivals": 6,
+            "served": 8,
+            "queue": 17
+          }
+        ],
+        "final_queue": 17
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 10,
+            "served": 10,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 9,
+            "served": 9,
+            "queue": 0
+          },
+          {
+            "hour": 3,
+            "arrivals": 13,
+            "served": 10,
+            "queue": 3
+          },
+          {
+            "hour": 4,
+            "arrivals": 13,
+            "served": 10,
+            "queue": 6
+          },
+          {
+            "hour": 5,
+            "arrivals": 14,
+            "served": 10,
+            "queue": 10
+          },
+          {
+            "hour": 6,
+            "arrivals": 6,
+            "served": 10,
+            "queue": 6
+          }
+        ],
+        "final_queue": 6
+      },
+      "reduction": 11
+    },
+    {
+      "seed": 110,
+      "arrivals": [
+        12,
+        9,
+        12,
+        13,
+        10,
+        14
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 12,
+            "served": 8,
+            "queue": 4
+          },
+          {
+            "hour": 2,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 5
+          },
+          {
+            "hour": 3,
+            "arrivals": 12,
+            "served": 8,
+            "queue": 9
+          },
+          {
+            "hour": 4,
+            "arrivals": 13,
+            "served": 8,
+            "queue": 14
+          },
+          {
+            "hour": 5,
+            "arrivals": 10,
+            "served": 8,
+            "queue": 16
+          },
+          {
+            "hour": 6,
+            "arrivals": 14,
+            "served": 8,
+            "queue": 22
+          }
+        ],
+        "final_queue": 22
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 12,
+            "served": 10,
+            "queue": 2
+          },
+          {
+            "hour": 2,
+            "arrivals": 9,
+            "served": 10,
+            "queue": 1
+          },
+          {
+            "hour": 3,
+            "arrivals": 12,
+            "served": 10,
+            "queue": 3
+          },
+          {
+            "hour": 4,
+            "arrivals": 13,
+            "served": 10,
+            "queue": 6
+          },
+          {
+            "hour": 5,
+            "arrivals": 10,
+            "served": 10,
+            "queue": 6
+          },
+          {
+            "hour": 6,
+            "arrivals": 14,
+            "served": 10,
+            "queue": 10
+          }
+        ],
+        "final_queue": 10
+      },
+      "reduction": 12
+    },
+    {
+      "seed": 111,
+      "arrivals": [
+        9,
+        11,
+        13,
+        9,
+        12,
+        12
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 1
+          },
+          {
+            "hour": 2,
+            "arrivals": 11,
+            "served": 8,
+            "queue": 4
+          },
+          {
+            "hour": 3,
+            "arrivals": 13,
+            "served": 8,
+            "queue": 9
+          },
+          {
+            "hour": 4,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 10
+          },
+          {
+            "hour": 5,
+            "arrivals": 12,
+            "served": 8,
+            "queue": 14
+          },
+          {
+            "hour": 6,
+            "arrivals": 12,
+            "served": 8,
+            "queue": 18
+          }
+        ],
+        "final_queue": 18
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 9,
+            "served": 9,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 11,
+            "served": 10,
+            "queue": 1
+          },
+          {
+            "hour": 3,
+            "arrivals": 13,
+            "served": 10,
+            "queue": 4
+          },
+          {
+            "hour": 4,
+            "arrivals": 9,
+            "served": 10,
+            "queue": 3
+          },
+          {
+            "hour": 5,
+            "arrivals": 12,
+            "served": 10,
+            "queue": 5
+          },
+          {
+            "hour": 6,
+            "arrivals": 12,
+            "served": 10,
+            "queue": 7
+          }
+        ],
+        "final_queue": 7
+      },
+      "reduction": 11
+    },
+    {
+      "seed": 112,
+      "arrivals": [
+        13,
+        10,
+        13,
+        12,
+        8,
+        11
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 13,
+            "served": 8,
+            "queue": 5
+          },
+          {
+            "hour": 2,
+            "arrivals": 10,
+            "served": 8,
+            "queue": 7
+          },
+          {
+            "hour": 3,
+            "arrivals": 13,
+            "served": 8,
+            "queue": 12
+          },
+          {
+            "hour": 4,
+            "arrivals": 12,
+            "served": 8,
+            "queue": 16
+          },
+          {
+            "hour": 5,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 16
+          },
+          {
+            "hour": 6,
+            "arrivals": 11,
+            "served": 8,
+            "queue": 19
+          }
+        ],
+        "final_queue": 19
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 13,
+            "served": 10,
+            "queue": 3
+          },
+          {
+            "hour": 2,
+            "arrivals": 10,
+            "served": 10,
+            "queue": 3
+          },
+          {
+            "hour": 3,
+            "arrivals": 13,
+            "served": 10,
+            "queue": 6
+          },
+          {
+            "hour": 4,
+            "arrivals": 12,
+            "served": 10,
+            "queue": 8
+          },
+          {
+            "hour": 5,
+            "arrivals": 8,
+            "served": 10,
+            "queue": 6
+          },
+          {
+            "hour": 6,
+            "arrivals": 11,
+            "served": 10,
+            "queue": 7
+          }
+        ],
+        "final_queue": 7
+      },
+      "reduction": 12
+    },
+    {
+      "seed": 113,
+      "arrivals": [
+        6,
+        10,
+        6,
+        13,
+        14,
+        11
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 6,
+            "served": 6,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 10,
+            "served": 8,
+            "queue": 2
+          },
+          {
+            "hour": 3,
+            "arrivals": 6,
+            "served": 8,
+            "queue": 0
+          },
+          {
+            "hour": 4,
+            "arrivals": 13,
+            "served": 8,
+            "queue": 5
+          },
+          {
+            "hour": 5,
+            "arrivals": 14,
+            "served": 8,
+            "queue": 11
+          },
+          {
+            "hour": 6,
+            "arrivals": 11,
+            "served": 8,
+            "queue": 14
+          }
+        ],
+        "final_queue": 14
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 6,
+            "served": 6,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 10,
+            "served": 10,
+            "queue": 0
+          },
+          {
+            "hour": 3,
+            "arrivals": 6,
+            "served": 6,
+            "queue": 0
+          },
+          {
+            "hour": 4,
+            "arrivals": 13,
+            "served": 10,
+            "queue": 3
+          },
+          {
+            "hour": 5,
+            "arrivals": 14,
+            "served": 10,
+            "queue": 7
+          },
+          {
+            "hour": 6,
+            "arrivals": 11,
+            "served": 10,
+            "queue": 8
+          }
+        ],
+        "final_queue": 8
+      },
+      "reduction": 6
+    },
+    {
+      "seed": 114,
+      "arrivals": [
+        9,
+        7,
+        11,
+        9,
+        6,
+        8
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 1
+          },
+          {
+            "hour": 2,
+            "arrivals": 7,
+            "served": 8,
+            "queue": 0
+          },
+          {
+            "hour": 3,
+            "arrivals": 11,
+            "served": 8,
+            "queue": 3
+          },
+          {
+            "hour": 4,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 4
+          },
+          {
+            "hour": 5,
+            "arrivals": 6,
+            "served": 8,
+            "queue": 2
+          },
+          {
+            "hour": 6,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 2
+          }
+        ],
+        "final_queue": 2
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 9,
+            "served": 9,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 7,
+            "served": 7,
+            "queue": 0
+          },
+          {
+            "hour": 3,
+            "arrivals": 11,
+            "served": 10,
+            "queue": 1
+          },
+          {
+            "hour": 4,
+            "arrivals": 9,
+            "served": 10,
+            "queue": 0
+          },
+          {
+            "hour": 5,
+            "arrivals": 6,
+            "served": 6,
+            "queue": 0
+          },
+          {
+            "hour": 6,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 0
+          }
+        ],
+        "final_queue": 0
+      },
+      "reduction": 2
+    },
+    {
+      "seed": 115,
+      "arrivals": [
+        10,
+        9,
+        7,
+        14,
+        7,
+        11
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 10,
+            "served": 8,
+            "queue": 2
+          },
+          {
+            "hour": 2,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 3
+          },
+          {
+            "hour": 3,
+            "arrivals": 7,
+            "served": 8,
+            "queue": 2
+          },
+          {
+            "hour": 4,
+            "arrivals": 14,
+            "served": 8,
+            "queue": 8
+          },
+          {
+            "hour": 5,
+            "arrivals": 7,
+            "served": 8,
+            "queue": 7
+          },
+          {
+            "hour": 6,
+            "arrivals": 11,
+            "served": 8,
+            "queue": 10
+          }
+        ],
+        "final_queue": 10
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 10,
+            "served": 10,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 9,
+            "served": 9,
+            "queue": 0
+          },
+          {
+            "hour": 3,
+            "arrivals": 7,
+            "served": 7,
+            "queue": 0
+          },
+          {
+            "hour": 4,
+            "arrivals": 14,
+            "served": 10,
+            "queue": 4
+          },
+          {
+            "hour": 5,
+            "arrivals": 7,
+            "served": 10,
+            "queue": 1
+          },
+          {
+            "hour": 6,
+            "arrivals": 11,
+            "served": 10,
+            "queue": 2
+          }
+        ],
+        "final_queue": 2
+      },
+      "reduction": 8
+    },
+    {
+      "seed": 116,
+      "arrivals": [
+        14,
+        10,
+        6,
+        7,
+        8,
+        13
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 14,
+            "served": 8,
+            "queue": 6
+          },
+          {
+            "hour": 2,
+            "arrivals": 10,
+            "served": 8,
+            "queue": 8
+          },
+          {
+            "hour": 3,
+            "arrivals": 6,
+            "served": 8,
+            "queue": 6
+          },
+          {
+            "hour": 4,
+            "arrivals": 7,
+            "served": 8,
+            "queue": 5
+          },
+          {
+            "hour": 5,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 5
+          },
+          {
+            "hour": 6,
+            "arrivals": 13,
+            "served": 8,
+            "queue": 10
+          }
+        ],
+        "final_queue": 10
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 14,
+            "served": 10,
+            "queue": 4
+          },
+          {
+            "hour": 2,
+            "arrivals": 10,
+            "served": 10,
+            "queue": 4
+          },
+          {
+            "hour": 3,
+            "arrivals": 6,
+            "served": 10,
+            "queue": 0
+          },
+          {
+            "hour": 4,
+            "arrivals": 7,
+            "served": 7,
+            "queue": 0
+          },
+          {
+            "hour": 5,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 0
+          },
+          {
+            "hour": 6,
+            "arrivals": 13,
+            "served": 10,
+            "queue": 3
+          }
+        ],
+        "final_queue": 3
+      },
+      "reduction": 7
+    },
+    {
+      "seed": 117,
+      "arrivals": [
+        9,
+        8,
+        8,
+        9,
+        12,
+        8
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 1
+          },
+          {
+            "hour": 2,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 1
+          },
+          {
+            "hour": 3,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 1
+          },
+          {
+            "hour": 4,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 2
+          },
+          {
+            "hour": 5,
+            "arrivals": 12,
+            "served": 8,
+            "queue": 6
+          },
+          {
+            "hour": 6,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 6
+          }
+        ],
+        "final_queue": 6
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 9,
+            "served": 9,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 0
+          },
+          {
+            "hour": 3,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 0
+          },
+          {
+            "hour": 4,
+            "arrivals": 9,
+            "served": 9,
+            "queue": 0
+          },
+          {
+            "hour": 5,
+            "arrivals": 12,
+            "served": 10,
+            "queue": 2
+          },
+          {
+            "hour": 6,
+            "arrivals": 8,
+            "served": 10,
+            "queue": 0
+          }
+        ],
+        "final_queue": 0
+      },
+      "reduction": 6
+    },
+    {
+      "seed": 118,
+      "arrivals": [
+        8,
+        10,
+        7,
+        11,
+        10,
+        6
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 10,
+            "served": 8,
+            "queue": 2
+          },
+          {
+            "hour": 3,
+            "arrivals": 7,
+            "served": 8,
+            "queue": 1
+          },
+          {
+            "hour": 4,
+            "arrivals": 11,
+            "served": 8,
+            "queue": 4
+          },
+          {
+            "hour": 5,
+            "arrivals": 10,
+            "served": 8,
+            "queue": 6
+          },
+          {
+            "hour": 6,
+            "arrivals": 6,
+            "served": 8,
+            "queue": 4
+          }
+        ],
+        "final_queue": 4
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 10,
+            "served": 10,
+            "queue": 0
+          },
+          {
+            "hour": 3,
+            "arrivals": 7,
+            "served": 7,
+            "queue": 0
+          },
+          {
+            "hour": 4,
+            "arrivals": 11,
+            "served": 10,
+            "queue": 1
+          },
+          {
+            "hour": 5,
+            "arrivals": 10,
+            "served": 10,
+            "queue": 1
+          },
+          {
+            "hour": 6,
+            "arrivals": 6,
+            "served": 7,
+            "queue": 0
+          }
+        ],
+        "final_queue": 0
+      },
+      "reduction": 4
+    },
+    {
+      "seed": 119,
+      "arrivals": [
+        10,
+        8,
+        14,
+        14,
+        12,
+        7
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 10,
+            "served": 8,
+            "queue": 2
+          },
+          {
+            "hour": 2,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 2
+          },
+          {
+            "hour": 3,
+            "arrivals": 14,
+            "served": 8,
+            "queue": 8
+          },
+          {
+            "hour": 4,
+            "arrivals": 14,
+            "served": 8,
+            "queue": 14
+          },
+          {
+            "hour": 5,
+            "arrivals": 12,
+            "served": 8,
+            "queue": 18
+          },
+          {
+            "hour": 6,
+            "arrivals": 7,
+            "served": 8,
+            "queue": 17
+          }
+        ],
+        "final_queue": 17
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 10,
+            "served": 10,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 0
+          },
+          {
+            "hour": 3,
+            "arrivals": 14,
+            "served": 10,
+            "queue": 4
+          },
+          {
+            "hour": 4,
+            "arrivals": 14,
+            "served": 10,
+            "queue": 8
+          },
+          {
+            "hour": 5,
+            "arrivals": 12,
+            "served": 10,
+            "queue": 10
+          },
+          {
+            "hour": 6,
+            "arrivals": 7,
+            "served": 10,
+            "queue": 7
+          }
+        ],
+        "final_queue": 7
+      },
+      "reduction": 10
+    },
+    {
+      "seed": 120,
+      "arrivals": [
+        14,
+        9,
+        9,
+        13,
+        7,
+        11
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 14,
+            "served": 8,
+            "queue": 6
+          },
+          {
+            "hour": 2,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 7
+          },
+          {
+            "hour": 3,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 8
+          },
+          {
+            "hour": 4,
+            "arrivals": 13,
+            "served": 8,
+            "queue": 13
+          },
+          {
+            "hour": 5,
+            "arrivals": 7,
+            "served": 8,
+            "queue": 12
+          },
+          {
+            "hour": 6,
+            "arrivals": 11,
+            "served": 8,
+            "queue": 15
+          }
+        ],
+        "final_queue": 15
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 14,
+            "served": 10,
+            "queue": 4
+          },
+          {
+            "hour": 2,
+            "arrivals": 9,
+            "served": 10,
+            "queue": 3
+          },
+          {
+            "hour": 3,
+            "arrivals": 9,
+            "served": 10,
+            "queue": 2
+          },
+          {
+            "hour": 4,
+            "arrivals": 13,
+            "served": 10,
+            "queue": 5
+          },
+          {
+            "hour": 5,
+            "arrivals": 7,
+            "served": 10,
+            "queue": 2
+          },
+          {
+            "hour": 6,
+            "arrivals": 11,
+            "served": 10,
+            "queue": 3
+          }
+        ],
+        "final_queue": 3
+      },
+      "reduction": 12
+    },
+    {
+      "seed": 121,
+      "arrivals": [
+        7,
+        9,
+        12,
+        8,
+        14,
+        8
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 7,
+            "served": 7,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 1
+          },
+          {
+            "hour": 3,
+            "arrivals": 12,
+            "served": 8,
+            "queue": 5
+          },
+          {
+            "hour": 4,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 5
+          },
+          {
+            "hour": 5,
+            "arrivals": 14,
+            "served": 8,
+            "queue": 11
+          },
+          {
+            "hour": 6,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 11
+          }
+        ],
+        "final_queue": 11
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 7,
+            "served": 7,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 9,
+            "served": 9,
+            "queue": 0
+          },
+          {
+            "hour": 3,
+            "arrivals": 12,
+            "served": 10,
+            "queue": 2
+          },
+          {
+            "hour": 4,
+            "arrivals": 8,
+            "served": 10,
+            "queue": 0
+          },
+          {
+            "hour": 5,
+            "arrivals": 14,
+            "served": 10,
+            "queue": 4
+          },
+          {
+            "hour": 6,
+            "arrivals": 8,
+            "served": 10,
+            "queue": 2
+          }
+        ],
+        "final_queue": 2
+      },
+      "reduction": 9
+    },
+    {
+      "seed": 122,
+      "arrivals": [
+        14,
+        9,
+        10,
+        7,
+        11,
+        9
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 14,
+            "served": 8,
+            "queue": 6
+          },
+          {
+            "hour": 2,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 7
+          },
+          {
+            "hour": 3,
+            "arrivals": 10,
+            "served": 8,
+            "queue": 9
+          },
+          {
+            "hour": 4,
+            "arrivals": 7,
+            "served": 8,
+            "queue": 8
+          },
+          {
+            "hour": 5,
+            "arrivals": 11,
+            "served": 8,
+            "queue": 11
+          },
+          {
+            "hour": 6,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 12
+          }
+        ],
+        "final_queue": 12
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 14,
+            "served": 10,
+            "queue": 4
+          },
+          {
+            "hour": 2,
+            "arrivals": 9,
+            "served": 10,
+            "queue": 3
+          },
+          {
+            "hour": 3,
+            "arrivals": 10,
+            "served": 10,
+            "queue": 3
+          },
+          {
+            "hour": 4,
+            "arrivals": 7,
+            "served": 10,
+            "queue": 0
+          },
+          {
+            "hour": 5,
+            "arrivals": 11,
+            "served": 10,
+            "queue": 1
+          },
+          {
+            "hour": 6,
+            "arrivals": 9,
+            "served": 10,
+            "queue": 0
+          }
+        ],
+        "final_queue": 0
+      },
+      "reduction": 12
+    },
+    {
+      "seed": 123,
+      "arrivals": [
+        6,
+        10,
+        7,
+        12,
+        10,
+        7
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 6,
+            "served": 6,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 10,
+            "served": 8,
+            "queue": 2
+          },
+          {
+            "hour": 3,
+            "arrivals": 7,
+            "served": 8,
+            "queue": 1
+          },
+          {
+            "hour": 4,
+            "arrivals": 12,
+            "served": 8,
+            "queue": 5
+          },
+          {
+            "hour": 5,
+            "arrivals": 10,
+            "served": 8,
+            "queue": 7
+          },
+          {
+            "hour": 6,
+            "arrivals": 7,
+            "served": 8,
+            "queue": 6
+          }
+        ],
+        "final_queue": 6
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 6,
+            "served": 6,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 10,
+            "served": 10,
+            "queue": 0
+          },
+          {
+            "hour": 3,
+            "arrivals": 7,
+            "served": 7,
+            "queue": 0
+          },
+          {
+            "hour": 4,
+            "arrivals": 12,
+            "served": 10,
+            "queue": 2
+          },
+          {
+            "hour": 5,
+            "arrivals": 10,
+            "served": 10,
+            "queue": 2
+          },
+          {
+            "hour": 6,
+            "arrivals": 7,
+            "served": 9,
+            "queue": 0
+          }
+        ],
+        "final_queue": 0
+      },
+      "reduction": 6
+    },
+    {
+      "seed": 124,
+      "arrivals": [
+        10,
+        14,
+        6,
+        8,
+        6,
+        12
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 10,
+            "served": 8,
+            "queue": 2
+          },
+          {
+            "hour": 2,
+            "arrivals": 14,
+            "served": 8,
+            "queue": 8
+          },
+          {
+            "hour": 3,
+            "arrivals": 6,
+            "served": 8,
+            "queue": 6
+          },
+          {
+            "hour": 4,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 6
+          },
+          {
+            "hour": 5,
+            "arrivals": 6,
+            "served": 8,
+            "queue": 4
+          },
+          {
+            "hour": 6,
+            "arrivals": 12,
+            "served": 8,
+            "queue": 8
+          }
+        ],
+        "final_queue": 8
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 10,
+            "served": 10,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 14,
+            "served": 10,
+            "queue": 4
+          },
+          {
+            "hour": 3,
+            "arrivals": 6,
+            "served": 10,
+            "queue": 0
+          },
+          {
+            "hour": 4,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 0
+          },
+          {
+            "hour": 5,
+            "arrivals": 6,
+            "served": 6,
+            "queue": 0
+          },
+          {
+            "hour": 6,
+            "arrivals": 12,
+            "served": 10,
+            "queue": 2
+          }
+        ],
+        "final_queue": 2
+      },
+      "reduction": 6
+    },
+    {
+      "seed": 125,
+      "arrivals": [
+        9,
+        9,
+        10,
+        8,
+        11,
+        8
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 1
+          },
+          {
+            "hour": 2,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 2
+          },
+          {
+            "hour": 3,
+            "arrivals": 10,
+            "served": 8,
+            "queue": 4
+          },
+          {
+            "hour": 4,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 4
+          },
+          {
+            "hour": 5,
+            "arrivals": 11,
+            "served": 8,
+            "queue": 7
+          },
+          {
+            "hour": 6,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 7
+          }
+        ],
+        "final_queue": 7
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 9,
+            "served": 9,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 9,
+            "served": 9,
+            "queue": 0
+          },
+          {
+            "hour": 3,
+            "arrivals": 10,
+            "served": 10,
+            "queue": 0
+          },
+          {
+            "hour": 4,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 0
+          },
+          {
+            "hour": 5,
+            "arrivals": 11,
+            "served": 10,
+            "queue": 1
+          },
+          {
+            "hour": 6,
+            "arrivals": 8,
+            "served": 9,
+            "queue": 0
+          }
+        ],
+        "final_queue": 0
+      },
+      "reduction": 7
+    },
+    {
+      "seed": 126,
+      "arrivals": [
+        6,
+        13,
+        9,
+        8,
+        13,
+        13
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 6,
+            "served": 6,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 13,
+            "served": 8,
+            "queue": 5
+          },
+          {
+            "hour": 3,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 6
+          },
+          {
+            "hour": 4,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 6
+          },
+          {
+            "hour": 5,
+            "arrivals": 13,
+            "served": 8,
+            "queue": 11
+          },
+          {
+            "hour": 6,
+            "arrivals": 13,
+            "served": 8,
+            "queue": 16
+          }
+        ],
+        "final_queue": 16
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 6,
+            "served": 6,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 13,
+            "served": 10,
+            "queue": 3
+          },
+          {
+            "hour": 3,
+            "arrivals": 9,
+            "served": 10,
+            "queue": 2
+          },
+          {
+            "hour": 4,
+            "arrivals": 8,
+            "served": 10,
+            "queue": 0
+          },
+          {
+            "hour": 5,
+            "arrivals": 13,
+            "served": 10,
+            "queue": 3
+          },
+          {
+            "hour": 6,
+            "arrivals": 13,
+            "served": 10,
+            "queue": 6
+          }
+        ],
+        "final_queue": 6
+      },
+      "reduction": 10
+    },
+    {
+      "seed": 127,
+      "arrivals": [
+        6,
+        7,
+        6,
+        6,
+        10,
+        9
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 6,
+            "served": 6,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 7,
+            "served": 7,
+            "queue": 0
+          },
+          {
+            "hour": 3,
+            "arrivals": 6,
+            "served": 6,
+            "queue": 0
+          },
+          {
+            "hour": 4,
+            "arrivals": 6,
+            "served": 6,
+            "queue": 0
+          },
+          {
+            "hour": 5,
+            "arrivals": 10,
+            "served": 8,
+            "queue": 2
+          },
+          {
+            "hour": 6,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 3
+          }
+        ],
+        "final_queue": 3
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 6,
+            "served": 6,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 7,
+            "served": 7,
+            "queue": 0
+          },
+          {
+            "hour": 3,
+            "arrivals": 6,
+            "served": 6,
+            "queue": 0
+          },
+          {
+            "hour": 4,
+            "arrivals": 6,
+            "served": 6,
+            "queue": 0
+          },
+          {
+            "hour": 5,
+            "arrivals": 10,
+            "served": 10,
+            "queue": 0
+          },
+          {
+            "hour": 6,
+            "arrivals": 9,
+            "served": 9,
+            "queue": 0
+          }
+        ],
+        "final_queue": 0
+      },
+      "reduction": 3
+    },
+    {
+      "seed": 128,
+      "arrivals": [
+        9,
+        12,
+        14,
+        11,
+        8,
+        13
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 1
+          },
+          {
+            "hour": 2,
+            "arrivals": 12,
+            "served": 8,
+            "queue": 5
+          },
+          {
+            "hour": 3,
+            "arrivals": 14,
+            "served": 8,
+            "queue": 11
+          },
+          {
+            "hour": 4,
+            "arrivals": 11,
+            "served": 8,
+            "queue": 14
+          },
+          {
+            "hour": 5,
+            "arrivals": 8,
+            "served": 8,
+            "queue": 14
+          },
+          {
+            "hour": 6,
+            "arrivals": 13,
+            "served": 8,
+            "queue": 19
+          }
+        ],
+        "final_queue": 19
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 9,
+            "served": 9,
+            "queue": 0
+          },
+          {
+            "hour": 2,
+            "arrivals": 12,
+            "served": 10,
+            "queue": 2
+          },
+          {
+            "hour": 3,
+            "arrivals": 14,
+            "served": 10,
+            "queue": 6
+          },
+          {
+            "hour": 4,
+            "arrivals": 11,
+            "served": 10,
+            "queue": 7
+          },
+          {
+            "hour": 5,
+            "arrivals": 8,
+            "served": 10,
+            "queue": 5
+          },
+          {
+            "hour": 6,
+            "arrivals": 13,
+            "served": 10,
+            "queue": 8
+          }
+        ],
+        "final_queue": 8
+      },
+      "reduction": 11
+    },
+    {
+      "seed": 129,
+      "arrivals": [
+        14,
+        10,
+        6,
+        12,
+        9,
+        11
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 14,
+            "served": 8,
+            "queue": 6
+          },
+          {
+            "hour": 2,
+            "arrivals": 10,
+            "served": 8,
+            "queue": 8
+          },
+          {
+            "hour": 3,
+            "arrivals": 6,
+            "served": 8,
+            "queue": 6
+          },
+          {
+            "hour": 4,
+            "arrivals": 12,
+            "served": 8,
+            "queue": 10
+          },
+          {
+            "hour": 5,
+            "arrivals": 9,
+            "served": 8,
+            "queue": 11
+          },
+          {
+            "hour": 6,
+            "arrivals": 11,
+            "served": 8,
+            "queue": 14
+          }
+        ],
+        "final_queue": 14
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 14,
+            "served": 10,
+            "queue": 4
+          },
+          {
+            "hour": 2,
+            "arrivals": 10,
+            "served": 10,
+            "queue": 4
+          },
+          {
+            "hour": 3,
+            "arrivals": 6,
+            "served": 10,
+            "queue": 0
+          },
+          {
+            "hour": 4,
+            "arrivals": 12,
+            "served": 10,
+            "queue": 2
+          },
+          {
+            "hour": 5,
+            "arrivals": 9,
+            "served": 10,
+            "queue": 1
+          },
+          {
+            "hour": 6,
+            "arrivals": 11,
+            "served": 10,
+            "queue": 2
+          }
+        ],
+        "final_queue": 2
+      },
+      "reduction": 12
+    },
+    {
+      "seed": 130,
+      "arrivals": [
+        14,
+        12,
+        10,
+        13,
+        13,
+        6
+      ],
+      "baseline": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 14,
+            "served": 8,
+            "queue": 6
+          },
+          {
+            "hour": 2,
+            "arrivals": 12,
+            "served": 8,
+            "queue": 10
+          },
+          {
+            "hour": 3,
+            "arrivals": 10,
+            "served": 8,
+            "queue": 12
+          },
+          {
+            "hour": 4,
+            "arrivals": 13,
+            "served": 8,
+            "queue": 17
+          },
+          {
+            "hour": 5,
+            "arrivals": 13,
+            "served": 8,
+            "queue": 22
+          },
+          {
+            "hour": 6,
+            "arrivals": 6,
+            "served": 8,
+            "queue": 20
+          }
+        ],
+        "final_queue": 20
+      },
+      "policy": {
+        "history": [
+          {
+            "hour": 1,
+            "arrivals": 14,
+            "served": 10,
+            "queue": 4
+          },
+          {
+            "hour": 2,
+            "arrivals": 12,
+            "served": 10,
+            "queue": 6
+          },
+          {
+            "hour": 3,
+            "arrivals": 10,
+            "served": 10,
+            "queue": 6
+          },
+          {
+            "hour": 4,
+            "arrivals": 13,
+            "served": 10,
+            "queue": 9
+          },
+          {
+            "hour": 5,
+            "arrivals": 13,
+            "served": 10,
+            "queue": 12
+          },
+          {
+            "hour": 6,
+            "arrivals": 6,
+            "served": 10,
+            "queue": 8
+          }
+        ],
+        "final_queue": 8
+      },
+      "reduction": 12
+    }
+  ],
+  "sensitivity": [
+    {
+      "capacity": 6,
+      "values": [
+        31,
+        25,
+        25,
+        17,
+        23,
+        30,
+        28,
+        22,
+        29,
+        34,
+        30,
+        31,
+        24,
+        14,
+        22,
+        22,
+        18,
+        16,
+        29,
+        27,
+        22,
+        24,
+        16,
+        20,
+        19,
+        26,
+        8,
+        31,
+        26,
+        32
+      ],
+      "summary": {
+        "count": 30,
+        "mean": 24.033333333333335,
+        "stddev": 6.144710836513612,
+        "minimum": 8,
+        "maximum": 34
+      }
+    },
+    {
+      "capacity": 8,
+      "values": [
+        19,
+        13,
+        13,
+        7,
+        11,
+        18,
+        16,
+        11,
+        17,
+        22,
+        18,
+        19,
+        14,
+        2,
+        10,
+        10,
+        6,
+        4,
+        17,
+        15,
+        11,
+        12,
+        6,
+        8,
+        7,
+        16,
+        3,
+        19,
+        14,
+        20
+      ],
+      "summary": {
+        "count": 30,
+        "mean": 12.6,
+        "stddev": 5.4684045457392845,
+        "minimum": 2,
+        "maximum": 22
+      }
+    },
+    {
+      "capacity": 10,
+      "values": [
+        8,
+        4,
+        5,
+        0,
+        5,
+        7,
+        5,
+        3,
+        6,
+        10,
+        7,
+        7,
+        8,
+        0,
+        2,
+        3,
+        0,
+        0,
+        7,
+        3,
+        2,
+        0,
+        0,
+        2,
+        0,
+        6,
+        0,
+        8,
+        2,
+        8
+      ],
+      "summary": {
+        "count": 30,
+        "mean": 3.933333333333333,
+        "stddev": 3.183289703016886,
+        "minimum": 0,
+        "maximum": 10
+      }
+    },
+    {
+      "capacity": 12,
+      "values": [
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        1,
+        0,
+        0
+      ],
+      "summary": {
+        "count": 30,
+        "mean": 0.4,
+        "stddev": 0.7239737088005909,
+        "minimum": 0,
+        "maximum": 2
+      }
+    },
+    {
+      "capacity": 14,
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "summary": {
+        "count": 30,
+        "mean": 0.0,
+        "stddev": 0.0,
+        "minimum": 0,
+        "maximum": 0
+      }
+    }
+  ],
+  "elapsed_ms": 1.2027670001089064,
+  "sensitivity_elapsed_ms": 2.5418369999670176
+}

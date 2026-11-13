@@ -1,0 +1,18 @@
+{
+  "format": "fictional-osm-structure-v1",
+  "source": "OSM 구조를 본뜬 가상 지도 자료",
+  "coordinate_note": "미터 좌표를 미리 제공한다. 실제 지리 좌표나 실제 OSM 자료가 아니다.",
+  "grid": {"origin_x": 0, "origin_y": 0, "cell_size": 20, "rows": 4, "cols": 5},
+  "elements": [
+    {"type":"node","id":1,"x":10,"y":30,"tags":{"amenity":"hospital","name":"병원 H"}},
+    {"type":"node","id":2,"x":70,"y":30,"tags":{}},
+    {"type":"node","id":3,"x":70,"y":70,"tags":{}},
+    {"type":"node","id":4,"x":40,"y":40,"tags":{}},
+    {"type":"node","id":5,"x":60,"y":40,"tags":{}},
+    {"type":"node","id":6,"x":60,"y":60,"tags":{}},
+    {"type":"node","id":7,"x":40,"y":60,"tags":{}},
+    {"type":"node","id":8,"x":100,"y":20,"tags":{"amenity":"clinic","name":"범위 밖 시설"}},
+    {"type":"way","id":101,"nodes":[1,2,3],"tags":{"highway":"residential","name":"중앙로"}},
+    {"type":"way","id":102,"nodes":[4,5,6,7,4],"tags":{"building":"apartments","name":"주거 건물"}}
+  ]
+}
